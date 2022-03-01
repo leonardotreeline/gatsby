@@ -7,8 +7,8 @@ module.exports = {
   plugins: [{
     resolve: 'gatsby-source-contentful',
     options: {
-      "accessToken": "CFPAT-Yt2__9rOeppfF6yZA7BoYmcntRxxX5V3YtQvhsgjUOo",
-      "spaceId": ""
+      "accessToken": "YEFOFMYP84BQqZ2XJEhYC-FzusPFjO5wwqoc6gBeU8E",
+      "spaceId": "z94fr1r9xmuk"
     }
   }, "gatsby-plugin-sass", {
     resolve: 'gatsby-plugin-google-analytics',
