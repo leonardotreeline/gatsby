@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 /** @type {import('gatsby').GatsbyConfig} */
 module.exports = {
   siteMetadata: {
@@ -7,8 +11,8 @@ module.exports = {
   plugins: [{
     resolve: 'gatsby-source-contentful',
     options: {
-      "accessToken": "YEFOFMYP84BQqZ2XJEhYC-FzusPFjO5wwqoc6gBeU8E",
-      "spaceId": "z94fr1r9xmuk"
+      "accessToken": process.env.CONTENTFUL_ACCESS_TOKEN,
+      "spaceId": process.env.CONTENTFUL_SPACE_ID
     }
   }, "gatsby-plugin-sass", {
     resolve: 'gatsby-plugin-google-analytics',
